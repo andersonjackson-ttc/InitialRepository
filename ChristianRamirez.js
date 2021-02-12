@@ -3,6 +3,6 @@ function testCR() {
     document.write("<br>So I moved text into this function");
 }
 
-function myFunction() {
+function myFunctionCR() {
   document.body.style.backgroundColor = "green";
 }
