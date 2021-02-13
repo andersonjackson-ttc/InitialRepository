@@ -1,5 +1,4 @@
-function myBtn(){ {
-  document.getElementById("btn").innerHTML = Date();
-  document.getElementById("btn").style.color = "green";
+function myBtn(){ 
+  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 }
 
