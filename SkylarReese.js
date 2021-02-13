@@ -1,3 +1,3 @@
 function myFunction() {
-  document.getElementById("button").innerHTML = "Nice Click";
+  document.getElementById("button").style.color = "green";
 }
