@@ -1,3 +1,3 @@
 function myFunction() {
-  document.getElementBId("button").innerHTML = "Nice Click";
+  document.getElementById("button").innerHTML = "Nice Click";
 }
