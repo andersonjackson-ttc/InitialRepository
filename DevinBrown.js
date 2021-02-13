@@ -1,3 +1,5 @@
-function myfunction(){
-window.alert('You clicked the button!');  
+function myBtn(){ {
+  document.getElementById("btn").innerHTML = Date();
+  document.getElementById("btn").style.color = "green";
 }
+
