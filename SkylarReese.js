@@ -1,3 +1,3 @@
 function SkylarFunction() {
-  document.getElementById("button").style.color = "green";
+  document.getElementById("skybutton").style.color = "green";
 }
