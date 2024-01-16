@@ -8,7 +8,7 @@ function ellasFunction() {
     });
 
     document.getElementById("ellasHeading").style.color = "orange";
-    document.getElementById("ellasHeading").style.fontSize = "50px";
+    document.getElementById("ellasHeading").style.fontSize = "60px";
 
 }
 
