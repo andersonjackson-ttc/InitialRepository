@@ -1,15 +1,17 @@
 // ChaimaeLamharfi.js
 
-function chaimaeFunction() {
-    alert("Chaimae was here!");
-}
+document.addEventListener("DOMContentLoaded", function () {
+    function chaimaeFunction() {
+        alert("Chaimae was here!");
+    }
 
-function changeBackgroundColor() {
-    const body = document.body;
-    const colors = ["#ffcccb", "#ffd700", "#98fb98", "#dda0dd", "#add8e6"];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    body.style.backgroundColor = randomColor;
-}
+    function changeBackgroundColor() {
+        const body = document.body;
+        const colors = ["#ffcccb", "#ffd700", "#98fb98", "#dda0dd", "#add8e6"];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        body.style.backgroundColor = randomColor;
+    }
 
-document.getElementById("chaimaeButton").addEventListener("click", chaimaeFunction);
-document.getElementById("changeColorButton").addEventListener("click", changeBackgroundColor);
+    document.getElementById("chaimaeButton").addEventListener("click", chaimaeFunction);
+    document.getElementById("changeColorButton").addEventListener("click", changeBackgroundColor);
+});
