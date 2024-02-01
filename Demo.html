@@ -12,6 +12,7 @@
     <script src="AitaTchakounte.js"></script>
     <script src="RileyHarrington.js"></script>
     <script src="RhyderSease.js"></script>
+	<script src="JamesHyatt.js"></script>
   </head>
   <style>
     #quoteDisplay {
@@ -42,6 +43,12 @@
       <button id="spot" onclick="theImage()">The Spot!</button>
     </div>
 
+	<h3>The time is:
+		<div id="clock"></div>
+			<script>startClock()</script>
+		</div>
+	</h3>
+
     <script>
       ahj();
       ellasFunction();
@@ -50,7 +57,7 @@
       createListWithButton();
       customizePage();
       theImage();
-
+	  startClock();
     </script>
   </body>
 </html>
