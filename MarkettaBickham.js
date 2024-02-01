@@ -1,38 +1,31 @@
+function createListWithButton() {
+  // Create a list
+  var myList = document.createElement("ul");
 
+  // Add items to the list
+  var items = ["Item 1", "Item 2", "Item 3"];
+  items.forEach(function (itemText) {
+    var listItem = document.createElement("li");
+    listItem.textContent = itemText;
+    myList.appendChild(listItem);
+  });
 
-function therapyScheduler() {
-    // Create a list to display scheduled appointments
-    const appointmentsList = document.createElement('ul');
-    
-    // Function to add a new appointment
-    function addAppointment() {
-        const newAppointment = prompt('Enter the details of the new appointment:');
-        if (newAppointment) {
-            const appointmentItem = document.createElement('li');
-            appointmentItem.textContent = newAppointment;
-            appointmentsList.appendChild(appointmentItem);
-        }
-    }
+  // Add a button
+  var myButton = document.createElement("button");
+  myButton.textContent = "Change Font Color";
 
-    // Add a button to add new appointments
-    const addButton = document.createElement('button');
-    addButton.textContent = 'Add Appointment';
-    addButton.addEventListener('click', addAppointment);
+  // Change font color when the button is clicked
+  myButton.addEventListener("click", function () {
+    var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    myList.style.color = randomColor;
+  });
 
-    // Add a checkbox to mark completed appointments
-    const completionCheckbox = document.createElement('input');
-    completionCheckbox.type = 'checkbox';
-    completionCheckbox.addEventListener('change', () => {
-        // Toggle font color based on completion status
-        const color = completionCheckbox.checked ? 'green' : 'black';
-        appointmentsList.style.color = color;
-    });
+  // Append the button to the list
+  myList.appendChild(myButton);
 
-    // Append the list, button, and checkbox to the body
-    document.body.appendChild(appointmentsList);
-    document.body.appendChild(addButton);
-    document.body.appendChild(completionCheckbox);
+  // Append the list to the body of the document
+  document.body.appendChild(myList);
 }
 
-// Call the therapyScheduler function when the page loads
-therapyScheduler();
+// Call the function
+createListWithButton();
