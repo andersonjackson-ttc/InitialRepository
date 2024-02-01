@@ -3,7 +3,6 @@ function ahj() {
 }
 
 // Clock {hh:mm:ss}
-// Description in commit
 function startClock() {
     const timeElement = document.getElementById("clock");
 
